@@ -48,8 +48,8 @@ Se desejar utilizar um broker local com o Mosquitto, siga os passos abaixo:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/MatheusH2021/mqtt-projeto-SE.git
-cd nome-do-repositorio
+git clone https://github.com/MatheusH2021/mqtt-SE-projeto.git
+cd mqtt-SE-projeto
 ```
 
 ### 2. Configure sua rede Wi-Fi
