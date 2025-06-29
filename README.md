@@ -128,6 +128,6 @@ idf.py flash
 - Certifique-se de que a ESP32 e o dispositivo que executa o Mosquitto estão na mesma rede.
 - O tópico utilizado no projeto é fixo: `/ifpe/ads/embarcados/esp32/led`.
 - Caso tenha problemas para conectar a ESP32 ao seu broker local, verifique se o firewall do seu computador está permitindo que o Mosquitto se comunique pela rede.
-- Se preferir, você também pode usar brokers MQTT online — basta informar a URL do broker nos campos apropriados.
+- Se preferir, você também pode usar brokers MQTT online, basta informar a URL do broker nos campos apropriados.
 
 ---
