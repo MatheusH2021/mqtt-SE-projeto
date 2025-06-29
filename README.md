@@ -16,7 +16,7 @@ Conectar a ESP32 a um broker MQTT e controlar um LED da seguinte forma:
 - Linguagem C
 - Protocolo MQTT 5.0
 - [MQTTX](https://mqttx.app/) (cliente MQTT)
-
+> Para que tudo ocorra como esperado, garanta que você possui todas as tecnologias instaladas e devidamente configuradas!
 ---
 
 ## ⚙️ Configuração do Broker Mosquitto (Local)
@@ -73,14 +73,18 @@ No arquivo `main/app_main.c`, modifique a seguinte linha:
 
 Substitua `<SEU_BROKER>` pelo IP do seu broker local ou por um broker público (ex: `mqtt://192.168.0.100`).
 
-### 4. Compile e faça o flash do projeto na ESP32
+### 4. Compile, faça o flash e monitore o projeto na ESP32
 
 ```bash
 idf.py build
-idf.py flash
+idf.py -p COMx flash
+idf.py -p COMx monitor
 ```
+> ⚠️ **Atenção:** Verifique se o ESP-IDF está usando a **porta serial correta**. No **VS Code**, clique no ícone de **tomada** no canto inferior esquerdo para selecionar a porta correta. Exibirá algo como `COMx` (Windows) ou `/dev/ttyUSBx` (Linux/macOS).   
+> Exemplos de uso:  
+> • Windows: `idf.py -p COM4 flash`  
+> • Linux/macOS: `idf.py -p /dev/ttyUSB0 flash`
 
----
 
 ## 🧪 Como Testar
 
